@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKBrainTech - Contact us</title>
+    <link rel="icon" href="assets/images/iconlogo.png" type="image/gif" sizes="20x30">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/gh/iconoir-icons/iconoir%40main/css/iconoir.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="main-aboutpage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo1.svg" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="contact.html" class="theme-btn">Let's talk</a>
+                    </nav>
+
+                    <a href="contact.html" class="theme-btn">Let's talk</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contact -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="gx-row d-flex justify-content-between gap-24">
+                    <div class="contact-infos">
+                        <h3 data-aos="fade-up">Contact Info</h3>
+                        <ul class="contact-details">
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <img src="assets/images/MAIL.png" class="iconoir-mail"></i>
+                                </div>
+                                <div class="right">
+                                    <span>MAIL us</span>
+                                    <h4>navjotkhatri999@gmail.com</h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <img src="assets/images/phone.png" class="iconoir-phone"></i>
+                                </div>
+                                <div class="right">
+                                    <span>Contact Us</span>
+                                    <h4>+919664638102</h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <img src="assets/images/location.png" class="iconoir-pin-alt"></i>
+                                </div>
+                                <div class="right">
+                                    <span>Location</span>
+                                    <h4>Ahmedabad-380016<br>Gujarat<br>BHARAT (INDIA)</h4>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 data-aos="fade-up">Social Info</h3>
+                        <ul class="social-links d-flex align-center" data-aos="zoom-in">
+                            <li><a href="https://www.linkedin.com/in/navjot-khatri-5721a5179/"><img
+                                        src="assets\images\linkedin.png" class="iconoir-dribbble"></i></a></li>
+                            <li><a href="https://www.instagram.com/nkbraintech/"><img src="assets\images\instagram.png"
+                                        class="iconoir-facebook-tag"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" class="contact-form">
+                        <div class="shadow-box">
+                            <img src="assets/images/bg1.png" alt="BG" class="bg-img">
+                            <img src="assets/images/icon3.png" alt="Icon">
+                            <h1>Let’s Learn <span>together.</span></h1>
+                            <form method="POST" action="https://wpriverthemes.com/landing/gridx-html/mailer.php">
+                                <div class="alert alert-success messenger-box-contact__msg" style="display: none"
+                                    role="alert">
+                                    Your message was sent successfully.
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="full-name" id="full-name" placeholder="Name *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" id="email" placeholder="Email *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="subject" id="subject" placeholder="Your Subject *">
+                                </div>
+                                <div class="input-group">
+                                    <textarea name="message" id="message" placeholder="Your Message *"></textarea>
+                                </div>
+                                <div class="input-group">
+                                    <button class="theme-btn submit-btn" name="submit" type="submit"
+                                        onclick="gotowhatsapp()">Send
+                                        Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <script>
+            function gotowhatsapp() {
+
+                var form_name = document.getElementById("full-name").value;
+                var form_email = document.getElementById("email").value;
+                var form_subject = document.getElementById("subject").value;
+                var formMessage = document.getElementById("message").value;
+
+                var url = "https://wa.me/919664638102?text="
+                    + "Name: " + form_name + "%0a"
+                    + "Email: " + form_email + "%0a"
+                    + "Subject: " + form_subject + "%0a"
+                    + "Message: " + formMessage;
+
+                window.open(url, '_blank').focus();
+            }
+        </script>
+
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a href="index.html" class="logo">
+                        <img src="assets\images\footer logo.png" alt="Logo">
+                    </a>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy; All rights reserved by <span>NKBrainTech</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+</body>
+
+</html>
